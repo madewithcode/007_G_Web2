@@ -65,7 +65,7 @@
             textarea {
                 resize: none;
                 border-top: none;
-                border-color: lightgrey;
+                border-color: grey;
             }
             
             .panel {
@@ -76,16 +76,21 @@
             iframe {
                 border: none;
             }
+            
+            .hidden {
+                display: none;
+            }
         
         </style>
         
     </head>
     <body>
-    
+
+        <!-- Header -->
         <div id="header">
             <div id="logo">CodePlayer</div>
         
-        
+            <!-- Buttons -->
             <div id="buttonContainer">
                 <div class="toggleButton active" id="html">HTML</div>
                 <div class="toggleButton" id="css">CSS</div>
@@ -94,14 +99,25 @@
             </div>
             
          </div>
-        
+
+        <!-- Main Container -->
         <div id="bodyContainer">
-            <textarea id="htmlPanel" class="panel">Hello World</textarea>
-            
+
+            <!-- HTML Text Area Panel -->
+            <textarea id="htmlPanel" class="panel hidden">Hello World</textarea>
+
+            <!-- CSS Text Area Panel -->
+            <textarea id="cssPanel" class="panel hidden">p { color: red; }</textarea>
+
+            <!-- JavaScript Text Area Panel -->
+            <textarea id="javascriptPanel" class="panel hidden">alert('hello!');</textarea>
+
+            <!-- Output iFrame -->
             <iframe id="outputPanel" class="panel"></iframe>
             
         </div>
-    
+
+        <!-- JavaScript -->
         <script type="text/javascript">
             
             $('.toggleButton').hover(function() {
@@ -109,17 +125,27 @@
             }, function() {
                 $(this).removeClass('highlightedButton');
             });
+
             
             $('.toggleButton').click(function() {
                 $(this).toggleClass('active');
                 $(this).removeClass('highlightedButton');
             });
+
                         
             $('.panel').height( $(window).height() - $('#header').height() - 15 );
+
             
             $('.panel').width( ($(window).width() / 2) - 10 );
+
             
-            
+            $('iframe').contents().find('html').html($('#htmlPanel').val());
+
+
+            $('textarea').on('change keyup paste', function() {
+                $('iframe').contents().find('html').html($('#htmlPanel').val());
+            })
+
             
             function log (logMessage) {
                 var  lm = 'INFO-VA: ';
