@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/font-awesome.css">
+    
     <style>
         .jumbotron {
             background-image: url('jumbotron-1.jpg');
@@ -24,7 +26,27 @@
         
         #appSummary {
             text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
+        
+        .card-img-top {
+            width: 100%;
+            
+        }
+        
+        #appStoreIcon {
+            width: 200px;
+        }
+        
+        #footer {
+            background-color: aqua;
+            padding-top: 50px;
+            margin-top: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
     </style>
 
 </head>
@@ -52,7 +74,7 @@
         </form>
     </nav>
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="jumbotron">
         <h1 class="display-3">My Awesome App!</h1>
         <p class="lead">This is why YOU should downlaod this fantastic app!</p>
         <hr class="my-2">
@@ -78,38 +100,51 @@
 
         </div>
     </div>
-
-    <div class="card-deck-wrapper">
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    
+    <div class="container">
+        <div class="card-deck-wrapper">
+            <div class="card-deck">
+                
+                <div class="card">
+                    <img class="card-img-top" src="square.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"><i class="fa fa-anchor"></i> Card 1</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                
+                <div class="card">
+                    <img class="card-img-top" src="square.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"><i class="fa fa-bicycle"></i> Card 2</h4>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                
+                <div class="card">
+                    <img class="card-img-top" src="square.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"><i class="fa fa-birthday-cake"></i> Card 3</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
+    
+    <div class="container-fluid" id="footer">
+        <div class="row">
+            <h2>Download the app!</h2>
+            <p class="lead">Really, why should I download this app??</p>
+            
+            <p><a href=""><img id="appStoreIcon" src="app-store-icon.png"></a></p>
+        
+        </div>
+    </div>
 
-    
-    
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
