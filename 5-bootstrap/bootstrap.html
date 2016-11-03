@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/font-awesome.css">
-    
+
     <style>
         .jumbotron {
             background-image: url('jumbotron-1.jpg');
             background-size: cover;
             color: white;
             text-align: center;
+            margin-top: 50px;
         }
         
         #email {
@@ -32,7 +33,6 @@
         
         .card-img-top {
             width: 100%;
-            
         }
         
         #appStoreIcon {
@@ -46,24 +46,28 @@
             text-align: center;
             padding-bottom: 50px;
         }
+        
+        body {
+            position: relative;
+        }
 
     </style>
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
 
-    <nav class="navbar navbar-light bg-faded">
+    <nav class="navbar navbar-light bg-faded navbar-fixed-top" id="navbar">
         <a class="navbar-brand" href="#">MyApp</a>
         <ul class="nav navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Download The App</a>
+                <a class="nav-link" href="#footer">Download The App</a>
             </li>
 
         </ul>
@@ -100,11 +104,11 @@
 
         </div>
     </div>
-    
-    <div class="container">
+
+    <div class="container" id="about">
         <div class="card-deck-wrapper">
             <div class="card-deck">
-                
+
                 <div class="card">
                     <img class="card-img-top" src="square.jpg" alt="Card image cap">
                     <div class="card-block">
@@ -112,7 +116,7 @@
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
-                
+
                 <div class="card">
                     <img class="card-img-top" src="square.jpg" alt="Card image cap">
                     <div class="card-block">
@@ -120,7 +124,7 @@
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
-                
+
                 <div class="card">
                     <img class="card-img-top" src="square.jpg" alt="Card image cap">
                     <div class="card-block">
@@ -128,25 +132,44 @@
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
-    
+
+    <div class="container" id="loremipsum">
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Lorem Ipsum "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..." Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum nulla non tempor tincidunt. Proin malesuada, purus vel sodales accumsan, libero leo fringilla ante, sed ultrices nibh tortor non magna. Integer sapien lectus, vehicula non volutpat eget, tristique dictum arcu. Mauris et auctor dui. Nam consequat tincidunt tellus, id fermentum mi lacinia a. Integer pellentesque est et risus semper dictum et sed urna. Fusce quis gravida odio. Vestibulum posuere semper dui, id feugiat nisl dapibus at. Ut vitae ultricies purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In pellentesque odio id accumsan varius. Sed tincidunt arcu eu scelerisque aliquam. Donec sit amet vulputate urna. Integer massa diam, dignissim eget bibendum quis, consectetur vel magna. Mauris arcu risus, volutpat ut tellus at, scelerisque pellentesque eros. Praesent eget fermentum nisl. Proin ac mauris vel mi porta tristique. Suspendisse potenti. Nunc quis ante aliquet, pharetra diam sit amet, luctus felis. Praesent lobortis massa nec nulla commodo, non pretium orci ultrices. Morbi gravida fringilla rutrum. Aliquam ut augue eget felis euismod tincidunt. Nulla ac libero justo. Aenean in mi dignissim, egestas sapien vel, placerat ipsum. Aenean malesuada quis massa quis pharetra. Sed id sagittis magna, eget fermentum nibh. Curabitur a ex in odio scelerisque consectetur. Sed id nulla magna. Suspendisse mattis accumsan bibendum. Morbi tincidunt fermentum metus, vulputate imperdiet neque gravida ac. Nam justo turpis, commodo nec orci a, sollicitudin pretium ipsum. Sed sit amet rutrum nisi. Duis vulputate consequat massa id malesuada. Phasellus tellus metus, maximus in iaculis sed, convallis ac est. Nulla aliquet malesuada mattis. Maecenas odio dolor, fringilla quis risus non, maximus eleifend ante. Suspendisse pellentesque ex sit amet ex hendrerit, non lacinia lorem fermentum. Donec interdum suscipit feugiat. Nulla dictum consectetur tortor, eget finibus justo ultricies elementum. Phasellus id ultrices dui. Nulla ornare nec nibh quis venenatis. Aliquam lacinia justo vitae enim lobortis, vitae pharetra neque malesuada. Aenean iaculis risus sed erat facilisis porta. Ut congue congue nulla, a iaculis nisi. Etiam porta sem eget molestie laoreet. Nullam ullamcorper egestas nulla non placerat. Nam pellentesque magna leo. Integer ut tellus libero. Fusce fermentum neque sodales congue varius. Mauris viverra nisl ex, vitae egestas justo tristique sit amet. Duis a lectus nec nisi gravida viverra non ac dui. Quisque vel fermentum metus, ac accumsan metus. Morbi placerat velit scelerisque augue commodo sagittis. Vivamus tempus leo sit amet porta gravida. Etiam aliquam ipsum vitae sem vulputate molestie.</p>
+            </div>
+
+            <div class="col-sm-6">
+                <p>Lorem Ipsum "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..." Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum nulla non tempor tincidunt. Proin malesuada, purus vel sodales accumsan, libero leo fringilla ante, sed ultrices nibh tortor non magna. Integer sapien lectus, vehicula non volutpat eget, tristique dictum arcu. Mauris et auctor dui. Nam consequat tincidunt tellus, id fermentum mi lacinia a. Integer pellentesque est et risus semper dictum et sed urna. Fusce quis gravida odio. Vestibulum posuere semper dui, id feugiat nisl dapibus at. Ut vitae ultricies purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In pellentesque odio id accumsan varius. Sed tincidunt arcu eu scelerisque aliquam. Donec sit amet vulputate urna. Integer massa diam, dignissim eget bibendum quis, consectetur vel magna. Mauris arcu risus, volutpat ut tellus at, scelerisque pellentesque eros. Praesent eget fermentum nisl. Proin ac mauris vel mi porta tristique. Suspendisse potenti. Nunc quis ante aliquet, pharetra diam sit amet, luctus felis. Praesent lobortis massa nec nulla commodo, non pretium orci ultrices. Morbi gravida fringilla rutrum. Aliquam ut augue eget felis euismod tincidunt. Nulla ac libero justo. Aenean in mi dignissim, egestas sapien vel, placerat ipsum. Aenean malesuada quis massa quis pharetra. Sed id sagittis magna, eget fermentum nibh. Curabitur a ex in odio scelerisque consectetur. Sed id nulla magna. Suspendisse mattis accumsan bibendum. Morbi tincidunt fermentum metus, vulputate imperdiet neque gravida ac. Nam justo turpis, commodo nec orci a, sollicitudin pretium ipsum. Sed sit amet rutrum nisi. Duis vulputate consequat massa id malesuada. Phasellus tellus metus, maximus in iaculis sed, convallis ac est. Nulla aliquet malesuada mattis. Maecenas odio dolor, fringilla quis risus non, maximus eleifend ante. Suspendisse pellentesque ex sit amet ex hendrerit, non lacinia lorem fermentum. Donec interdum suscipit feugiat. Nulla dictum consectetur tortor, eget finibus justo ultricies elementum. Phasellus id ultrices dui. Nulla ornare nec nibh quis venenatis. Aliquam lacinia justo vitae enim lobortis, vitae pharetra neque malesuada. Aenean iaculis risus sed erat facilisis porta. Ut congue congue nulla, a iaculis nisi. Etiam porta sem eget molestie laoreet. Nullam ullamcorper egestas nulla non placerat. Nam pellentesque magna leo. Integer ut tellus libero. Fusce fermentum neque sodales congue varius. Mauris viverra nisl ex, vitae egestas justo tristique sit amet. Duis a lectus nec nisi gravida viverra non ac dui. Quisque vel fermentum metus, ac accumsan metus. Morbi placerat velit scelerisque augue commodo sagittis. Vivamus tempus leo sit amet porta gravida. Etiam aliquam ipsum vitae sem vulputate molestie.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
     <div class="container-fluid" id="footer">
         <div class="row">
             <h2>Download the app!</h2>
             <p class="lead">Really, why should I download this app??</p>
-            
-            <p><a href=""><img id="appStoreIcon" src="app-store-icon.png"></a></p>
-        
+
+            <p>
+                <a href=""><img id="appStoreIcon" src="app-store-icon.png"></a>
+            </p>
+
         </div>
     </div>
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 </body>
 
